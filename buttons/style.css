@@ -246,8 +246,8 @@ button {
 
 /* eighth button  */
 
-.perspective{
-    perspective: 500px;
+.perspective {
+  perspective: 500px;
 }
 
 .btn--8 {
@@ -278,6 +278,95 @@ button {
 }
 
 .btn--8:hover:before {
-    transform: translateZ(0);
-    opacity: 1;
+  transform: translateZ(0);
+  opacity: 1;
 }
+
+/* ninth button  */
+.btn--9 {
+  border: 3px solid #360f44;
+  position: relative;
+  color: #360f44;
+  overflow: hidden;
+}
+
+.btn--9:before {
+  content: "";
+  position: absolute;
+  text-transform: uppercase;
+  left: 0;
+  top: 0;
+  background-color: #360f44;
+  width: 100%;
+  height: 0%;
+  transition: all 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  color: #fff;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn--9:hover {
+  color: #fff;
+}
+
+.btn--9:hover:before {
+  height: 200%;
+}
+
+/* tenth button  */
+.btn--10 {
+  border: none;
+  position: relative;
+  color: #fff;
+  background-color: #360f44;
+  /* overflow: hidden; */
+}
+
+.btn--10:before {
+    content: "Hover me";
+    position: absolute;
+    text-transform: uppercase;
+    left: 0;
+    top: 0;
+    background-color: greenyellow;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+  }
+.btn--10:after {
+    content: "Hover me";
+    position: absolute;
+    text-transform: uppercase;
+    left: 0;
+    top: 0;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease 0.25s;
+    transform: rotateX(270deg);
+    transform-origin: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 3;
+  }
+
+.btn--10:hover:before {
+    transform: rotateX(0);
+}
+
+.btn--10:hover:after {
+    transform: rotateX(0);
+}
+
