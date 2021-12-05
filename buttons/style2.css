@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=BenchNine&display=swap");
+
 body {
   margin: 0;
   height: 100vh;
@@ -14,6 +16,7 @@ button {
   background-color: transparent;
   font-size: 20px;
   transition: all 0.6s ease;
+  cursor: pointer;
 }
 
 /* 12th button  */
@@ -108,7 +111,6 @@ button {
   width: 100%;
   height: 100%;
   z-index: -1;
-  transition: all 0.6s;
   mix-blend-mode: multiply;
   transition: all 0.2s;
 }
@@ -140,4 +142,208 @@ button {
 
 .btn--13:hover {
   color: rgba(4, 107, 155, 0.61);
+}
+
+/* 14th button  */
+.btn--14 {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #f6b93b;
+  border: 3px solid #f6b93b;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.btn--14:before,
+.btn--14:after,
+.btn--14 span::after,
+.btn--14 span::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  z-index: -1;
+  background-color: #f6b93b;
+  transition: all 0.2s;
+}
+.btn--14:before {
+  left: -25%;
+  top: 0;
+}
+.btn--14:after {
+  left: 25%;
+  top: -100%;
+  transition-delay: 0.1s;
+}
+.btn--14 span::after {
+  top: 100%;
+  right: 25%;
+  transition-delay: 0.2s;
+}
+.btn--14 span::before {
+  top: 0;
+  right: -25%;
+  transition-delay: 0.3s;
+}
+
+.btn--14:hover:before {
+  left: 0;
+}
+.btn--14:hover:after {
+  top: 0;
+}
+
+.btn--14:hover span:before {
+  right: 0;
+}
+.btn--14:hover span:after {
+  top: 0;
+}
+
+.btn--14:hover {
+  color: #fff;
+}
+
+/* 15th button  */
+.btn--15 {
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fdc518;
+  border: none;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+.btn--15:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  top: -15px;
+  left: 0;
+  border-left: 2px solid red;
+  border-right: 2px solid #fdc518;
+  transform: rotateY(0);
+  transition: all 0.8s;
+}
+
+.btn--15:after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 100%;
+  top: 0;
+  left: -15px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid #fdc518;
+  transform: rotateY(0);
+  transition: all 0.8s;
+  transition-delay: 0.2s;
+}
+
+.btn--15:hover::after {
+  transform: rotateX(180deg);
+}
+
+.btn--15:hover::before {
+  transform: rotateY(180deg);
+}
+
+/* 16th button  */
+.btn--16 {
+  border: none;
+  width: 150px;
+  color: #fff;
+  background-color: #c47135;
+  font-family: "BenchNine", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.btn--16::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid #c47135;
+  border-left: 2px solid #c47135;
+  transition: all 0.25s;
+}
+
+.btn--16::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 2px solid #c47135;
+  border-right: 2px solid #c47135;
+  transition: all 0.25s;
+}
+
+.btn--16:hover::before,
+.btn--16:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+/* 17th button  */
+.btn--17 {
+  width: 160px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 25px;
+  transition: all .8s;
+}
+
+.btn--17:hover {
+  color: #fff;
+}
+
+.btn--17 span {
+  color: transparent;
+  position: relative;
+}
+
+.btn--17 span::before {
+  content: "B";
+  position: absolute;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.btn--17:hover span::before {
+  color: #fff;
+  font-size: 80px;
+  transform: translate(-65%, -40%) rotate(360deg);
+}
+
+.btn--17::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.btn--17:hover::before {
+  opacity: 1;
+  transform: rotate(15deg);
 }
