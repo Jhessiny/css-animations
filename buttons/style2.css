@@ -43,7 +43,7 @@ button {
   border-radius: 50%;
   z-index: -1;
   transform: translateY(-50%);
-  transition: all 0.6s;
+  transition: all 0.4s;
   opacity: 0;
 }
 
@@ -85,12 +85,12 @@ button {
 
 .btn--12:hover span {
   transform: scale(1);
-  transition-delay: 0.4s;
+  transition-delay: 0.3s;
 }
 
 .btn--12:hover {
   color: #fff;
-  transition-delay: 0.4s;
+  transition-delay: 0.3s;
 }
 
 /* 13th button  */
